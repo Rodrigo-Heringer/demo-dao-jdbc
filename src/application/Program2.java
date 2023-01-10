@@ -1,6 +1,5 @@
 package application;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import model.dao.DaoFActory;
@@ -23,6 +22,9 @@ public class Program2 {
             System.out.println(d);
         }
 
-
+        System.out.println("\n=== TEST 3: insert =======");
+        Department newDepartMent = new Department(null, "Music");
+        departmentDao.insert(newDepartMent);
+        System.out.println("Inserted! New id = " + newDepartMent.getId());
     };
 }
